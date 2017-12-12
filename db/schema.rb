@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 20171212071242) do
     t.integer  "user_id"
     t.string   "billing_name"
     t.string   "billing_address"
-    t.string   "shiping_name"
+    t.string   "shipping_name"
     t.string   "shipping_address"
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
