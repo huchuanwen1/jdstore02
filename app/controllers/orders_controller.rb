@@ -33,7 +33,7 @@ class OrdersController < ApplicationController
         @order.make_payment!
         redirect_to order_path(@order.token), notice: "使用支付宝成功完成付款"
       end
-      def pay_with_wethat
+      def pay_with_wechat
     @order = Order.find_by_token(params[:id])
     @order.set_payment_with!("wechat")
     @order.make_payment!
